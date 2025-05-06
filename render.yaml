@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: accounting-chatbot
+    env: node
+    buildCommand: npm install
+    startCommand: node server/server.js
+    envVars:
+      - key: PORT
+        value: 3000
